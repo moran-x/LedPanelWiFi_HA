@@ -1,5 +1,5 @@
 # LedPanelWiFi_HA
-Управление LedPanelWiFi в Home Assistant
+Управление [LedPanelWiFi 1.14+](https://github.com/vvip-68/LedPanelWiFi) в Home Assistant
 
 ## configuration.yaml
 
