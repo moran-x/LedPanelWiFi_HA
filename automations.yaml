@@ -1,0 +1,64 @@
+- id: "1738755798858"
+  alias: wifipanel get info
+  description: ""
+  triggers:
+    - trigger: time_pattern
+      seconds: "30"
+    - trigger: time_pattern
+      seconds: "0"
+  conditions: []
+  actions:
+    - action: pyscript.get_params
+      metadata: {}
+      data: {}
+  mode: single
+- id: "1738816681828"
+  alias: window_panel_on_off
+  description: Вкл/Выкл гирлянду
+  triggers:
+    - trigger: mqtt
+      topic: LedWiFiWindow/PS/cmd
+  conditions: []
+  actions:
+    - action: pyscript.ledwindow_on_off
+      data:
+        led_ip: 10.1.30.40
+  mode: single
+- id: "1738819813484"
+  alias: window_panel_brightness
+  description: Изменить яркость гирляны
+  triggers:
+    - trigger: mqtt
+      topic: LedWiFiWindow/BR/bcmd
+      id: bcmd
+  conditions: []
+  actions:
+    - action: pyscript.ledwindow_brightness
+      data:
+        led_ip: 10.1.30.40
+        brightness: "{{ trigger.payload_json }}"
+  mode: single
+- id: "1738827605084"
+  alias: window_panel_random_on_off
+  description: Вкл/Выкл случайный режим
+  triggers:
+    - trigger: mqtt
+      topic: LedWiFiWindow/RM/cmd
+  conditions: []
+  actions:
+    - action: pyscript.ledwindow_random_effect
+      data:
+        led_ip: 10.1.30.40
+  mode: single
+- id: "1738828015572"
+  alias: window_panel_auto_on_off
+  description: Вкл/Выкл автоматический режим
+  triggers:
+    - trigger: mqtt
+      topic: LedWiFiWindow/DM/cmd
+  conditions: []
+  actions:
+    - action: pyscript.ledwindow_auto_mode
+      data:
+        led_ip: 10.1.30.40
+  mode: single
