@@ -5,6 +5,7 @@
 
 ```sh
 mqtt:
-  switch: !include_dir_merge_list mqtt/binary
+  light: !include_dir_merge_list mqtt/light
+  switch: !include_dir_merge_list mqtt/switch
   sensor: !include_dir_merge_list mqtt/sensor
 ```
