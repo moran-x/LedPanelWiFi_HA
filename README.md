@@ -1,9 +1,10 @@
 # LedPanelWiFi_HA
 Управление [LedPanelWiFi 1.14+](https://github.com/vvip-68/LedPanelWiFi) в Home Assistant
+![SCREN](https://github.com/moran-x/LedPanelWiFi_HA/blob/main/images/WiFiLedPAnel_HA.png)
 
 > Данная интеграция делалась для **Home Assistant Operating System**
 
-#Подготовка
+# Подготовка
 ## Дополнения для установки
 - File editor или SAMBA
 - Terminal & SSH
@@ -16,7 +17,7 @@
 ## Дополнения для удобства
 - Studio Code Server (если хотите вносить много правок в код)
 
-#Установка
+# Установка
 
 - скачиваем архив с репозитория.
 - любым доступным способом (**SAMBA**, **File editor**) размещаем папки **mqtt** и **pyscript** на сервере HA, желательно не изменяя структуру файлов и папок
@@ -24,7 +25,7 @@
 
 `chmod 777 websocat`
 
-#Настройка
+# Настройка
 
 - добавляем интеграцию **MQTT** и **Pyscript Python scripting** в HA
 - создаем нового пользователя для взаимодействия с MQTT, либо можете использовать свой логин и пароль
@@ -36,5 +37,3 @@
 - в файл **automations.yaml** добавляем строки из файла **auto.yaml**, заменив везде IP адрес на свой, и при необходимости изменяем название ленты на свое.
 - если лент несколько, дублируем содержимое файла **auto.yaml**, кроме первой автоматизации, заменив IP, ID и название лент
 - перезагружаем HA для применения всех изменений.
-
-![SCREN](https://github.com/moran-x/LedPanelWiFi_HA/blob/main/images/WiFiLedPAnel_HA.png)
