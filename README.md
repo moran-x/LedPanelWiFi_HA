@@ -7,7 +7,6 @@
 # Подготовка
 ## Дополнения для установки
 - File editor или SAMBA
-- [Advanced SSH & Web Terminal](https://github.com/hassio-addons/addon-ssh/tree/v20.0.0)
 
 ## Дополнения для работы интеграции
 - [Pyscript: Python Scripting for Home Assistant](https://github.com/custom-components/pyscript?tab=readme-ov-file)
@@ -21,11 +20,6 @@
 
 - скачиваем архив с репозитория.
 - любым доступным способом (**SAMBA**, **File editor**) размещаем папки **mqtt** и **pyscript** на сервере HA, желательно не изменяя структуру файлов и папок
-- файл **websocat** копируем на сервер и в **Terminal & SSH** устанавливаем на него права 777
-
-```sh
-chmod 777 websocat
-```
 
 # Настройка
 
