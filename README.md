@@ -7,12 +7,12 @@
 # Подготовка
 ## Дополнения для установки
 - File editor или SAMBA
-- Terminal & SSH
+- [Advanced SSH & Web Terminal](https://github.com/hassio-addons/addon-ssh/tree/v20.0.0)
 
 ## Дополнения для работы интеграции
-- Pyscript: Python Scripting for Home Assistant (установка через HACS)
-- MQTT
-- Компонент Yandex Smart Home для Home Assistant (для управления Алисой или Марусей) (установка через HACS)
+- [Pyscript: Python Scripting for Home Assistant](https://github.com/custom-components/pyscript?tab=readme-ov-file)
+- [MQTT](https://www.home-assistant.io/integrations/mqtt/)
+- [Компонент Yandex Smart Home для Home Assistant](https://docs.yaha-cloud.ru/v1.0.x/)
 
 ## Дополнения для удобства
 - Studio Code Server (если хотите вносить много правок в код)
