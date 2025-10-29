@@ -2,7 +2,7 @@
 # Если лент несколько, то делаем копию файла в этой папке и так же ВЕЗДЕ меняем LedWiFiWindow на свое название
 - name: "Версия прошивки"
   unique_id: "LedWiFiWindow_vr"
-  object_id: "LedWiFiWindow_vr"
+  default_entity_id: sensor.LedWiFiWindow_vr
   state_topic: "LedWiFiWindow/VR"
   device:
     identifiers: "LedWiFiWindow"
@@ -11,7 +11,7 @@
     model: "V1"
 - name: "Имя устройства"
   unique_id: "LedWiFiWindow_hn"
-  object_id: "LedWiFiWindow_hn"
+  default_entity_id: sensor.LedWiFiWindow_hn
   state_topic: "LedWiFiWindow/HN"
   device:
     identifiers: "LedWiFiWindow"
@@ -20,7 +20,7 @@
     model: "V1"
 - name: "Текущая яркость"
   unique_id: "LedWiFiWindow_br"
-  object_id: "LedWiFiWindow_br"
+  default_entity_id: sensor.LedWiFiWindow_br
   state_topic: "LedWiFiWindow/BR"
   device:
     identifiers: "LedWiFiWindow"
@@ -29,7 +29,7 @@
     model: "V1"
 - name: "ID текущего режима (эффекта)"
   unique_id: "LedWiFiWindow_ef"
-  object_id: "LedWiFiWindow_ef"
+  default_entity_id: sensor.LedWiFiWindow_ef
   state_topic: "LedWiFiWindow/EF"
   device:
     identifiers: "LedWiFiWindow"
@@ -38,7 +38,7 @@
     model: "V1"
 - name: "ID текущего специального режима (эффекта) или -1 если такого нет"
   unique_id: "LedWiFiWindow_sm"
-  object_id: "LedWiFiWindow_sm"
+  default_entity_id: sensor.LedWiFiWindow_sm
   state_topic: "LedWiFiWindow/SM"
   device:
     identifiers: "LedWiFiWindow"
@@ -47,7 +47,7 @@
     model: "V1"
 - name: "Имя эффекта"
   unique_id: "LedWiFiWindow_en"
-  object_id: "LedWiFiWindow_en"
+  default_entity_id: sensor.LedWiFiWindow_en
   state_topic: "LedWiFiWindow/EN"
   device:
     identifiers: "LedWiFiWindow"
@@ -56,7 +56,7 @@
     model: "V1"
 - name: "Время работы в секундах (uptime)"
   unique_id: "LedWiFiWindow_up"
-  object_id: "LedWiFiWindow_up"
+  default_entity_id: sensor.LedWiFiWindow_up
   state_topic: "LedWiFiWindow/UP"
   device_class: duration
   unit_of_measurement: "s"
@@ -67,7 +67,7 @@
     model: "V1"
 - name: "Остаток свободной памяти в байтах"
   unique_id: "LedWiFiWindow_fm"
-  object_id: "LedWiFiWindow_fm"
+  default_entity_id: sensor.LedWiFiWindow_fm
   state_topic: "LedWiFiWindow/FM"
   device_class: data_size
   unit_of_measurement: "B"
@@ -78,7 +78,7 @@
     model: "V1"
 - name: "IP адрес"
   unique_id: "LedWiFiWindow_ip"
-  object_id: "LedWiFiWindow_ip"
+  default_entity_id: sensor.LedWiFiWindow_ip
   state_topic: "LedWiFiWindow/IP"
   device:
     identifiers: "LedWiFiWindow"
