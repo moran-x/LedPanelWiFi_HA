@@ -31,6 +31,7 @@ def get_params():
             x = json.loads(result)
             y = json.loads(x["d"])
             client.publish(led_lamps_name[idx]+'/'+param, payload=str(y[param]), qos=0, retain=False)
+            # log.info(led_lamps_name[idx]+'/'+param+':'+y[param])
     ws.close()
 
 
