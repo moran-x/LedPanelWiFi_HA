@@ -2,7 +2,7 @@
 # Если лент несколько, то делаем копию файла в этой папке и так же ВЕЗДЕ меняем LedWiFiWindow на свое название
 - name: "Текущая яркость"
   unique_id: "LedWiFiWindow_br"
-  object_id: "LedWiFiWindow_br"
+  default_entity_id: light.LedWiFiWindow_br
   state_topic: "LedWiFiWindow/PS"
   brightness_state_topic: "LedWiFiWindow/BR"
   brightness_command_topic: "LedWiFiWindow/BR/bcmd"
