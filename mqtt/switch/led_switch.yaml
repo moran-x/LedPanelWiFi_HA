@@ -2,7 +2,7 @@
 # Если лент несколько, то делаем копию файла в этой папке и так же ВЕЗДЕ меняем LedWiFiWindow на свое название
 - name: "Состояние питания: вкл/выкл"
   unique_id: "LedWiFiWindow_ps"
-  object_id: "LedWiFiWindow_ps"
+  default_entity_id: switch.LedWiFiWindow_ps
   state_topic: "LedWiFiWindow/PS"
   command_topic: "LedWiFiWindow/PS/cmd"
   payload_on: 1
@@ -14,7 +14,7 @@
     model: "V1"
 - name: "Состояние выбора случайного эффекта"
   unique_id: "LedWiFiWindow_rm"
-  object_id: "LedWiFiWindow_rm"
+  default_entity_id: switch.LedWiFiWindow_rm
   state_topic: "LedWiFiWindow/RM"
   command_topic: "LedWiFiWindow/RM/cmd"
   payload_on: 1
@@ -26,7 +26,7 @@
     model: "V1"
 - name: "Состояние автоматической смены эффектов"
   unique_id: "LedWiFiWindow_dm"
-  object_id: "LedWiFiWindow_dm"
+  default_entity_id: switch.LedWiFiWindow_dm
   state_topic: "LedWiFiWindow/DM"
   command_topic: "LedWiFiWindow/DM/cmd"
   payload_on: 1
